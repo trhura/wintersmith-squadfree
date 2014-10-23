@@ -1,0 +1,29 @@
+nav.navbar.navbar-custom.navbar-fixed-top.top-nav-collapse(role='navigation')
+	.container
+		.navbar-header.page-scroll
+			button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+				i.fa.fa-bars
+			a.navbar-brand(href='index.html')
+				h1 SQUAD FREE
+		// Collect the nav links, forms, and other content for toggling
+		.collapse.navbar-collapse.navbar-right.navbar-main-collapse
+			ul.nav.navbar-nav
+				li
+					a(href='#intro') Home
+				li
+					a(href='#about') About
+				li
+					a(href='#service') Service
+				li.active
+					a(href='#contact') Contact
+				li.dropdown
+					a.dropdown-toggle(href='#', data-toggle='dropdown')
+						| Dropdown
+						b.caret
+					ul.dropdown-menu
+						li
+							a(href='#') Example menu
+						li
+							a(href='#') Example menu
+						li
+							a(href='#') Example menu

@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+	include ./includes/head.jade
+	body#page-top(data-spy='scroll', data-target='.navbar-custom')
+		// Preloader
+		#preloader(style='display: none;')
+			#load(style='display: none;')
+
+		include ./includes/navigator.jade
+		include ./includes/section_intro.jade
+		include ./includes/section_about.jade
+		include ./includes/section_service.jade
+		include ./includes/section_contact.jade
+
+		include ./includes/footer.jade
+
+		script(src='js/jquery.min.js')
+		script(src='js/bootstrap.min.js')
+		script(src='js/jquery.easing.min.js')
+		script(src='js/jquery.scrollTo.js')
+		script(src='js/wow.min.js')
+
+		// Custom Theme JavaScript
+		script(src='js/custom.js')
